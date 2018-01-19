@@ -1,0 +1,40 @@
+{
+  "name": "travelkitty",
+  "version": "1.0.0",
+  "description": "base",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others \"npm run frontend\"  \"npm run functions\"",
+    "frontend": "cd frontend && npm run dev",
+    "functions": "cd functions && npm run serve",
+    "build": "cd frontend && npm run build",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cultofmetatron/travelkitty.git"
+  },
+  "keywords": [
+    "travel",
+    "kitty",
+    "vue",
+    "firebase"
+  ],
+  "author": "Peter de Croos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cultofmetatron/travelkitty/issues"
+  },
+  "homepage": "https://github.com/cultofmetatron/travelkitty#readme",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "firebase": "^4.9.0"
+  },
+  "devDependencies": {
+    "webpack": "^3.6.0",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.9.1",
+    "webpack-merge": "^4.1.0"
+  }
+}
