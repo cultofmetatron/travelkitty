@@ -17,7 +17,6 @@
   },
   "keywords": [
     "travel",
-    "kitty",
     "vue",
     "firebase"
   ],
@@ -29,7 +28,8 @@
   "homepage": "https://github.com/cultofmetatron/travelkitty#readme",
   "dependencies": {
     "concurrently": "^3.5.1",
-    "firebase": "^4.9.0"
+    "firebase": "^4.9.0",
+    "jshint": "^2.9.5"
   },
   "devDependencies": {
     "webpack": "^3.6.0",
