@@ -4,12 +4,12 @@
   "description": "base",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently --kill-others \"npm run frontend\"  \"npm run functions\"",
     "frontend": "cd frontend && npm run dev",
     "functions": "cd functions && npm run serve",
     "build": "cd frontend && npm run build",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && firebase deploy",
+    "test": "cd frontend && npm run unit && npm run e2e"
   },
   "repository": {
     "type": "git",

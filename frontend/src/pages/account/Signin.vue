@@ -1,9 +1,10 @@
 <template>
   <div>
-    Profile
+    <h1>Signin</h1>
   </div>
 </template>
 <script>
+
 export default {
   data () {
     return {}

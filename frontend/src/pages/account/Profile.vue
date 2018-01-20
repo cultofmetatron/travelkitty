@@ -1,12 +1,14 @@
 <template>
   <div>
-    Profile
+    <h1>Profile</h1>
   </div>
 </template>
 <script>
 export default {
   data () {
-    return {}
+    return {
+      foo: 'bar'
+    }
   }
 }
 </script>
